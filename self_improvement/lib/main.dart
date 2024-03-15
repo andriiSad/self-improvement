@@ -7,6 +7,7 @@ void main() {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       home: const HomePage(),
     ),
   );
@@ -19,7 +20,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Self-improvement'),
+        title: const Text(
+          'Self-improvement',
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.blue,
         centerTitle: true,
       ),
     );
